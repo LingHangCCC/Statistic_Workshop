@@ -149,8 +149,8 @@ calculate_multiclass_metrics <- function(y_true, y_pred) {
 
 # ========= 主要分析函數 =========
 
-run_rf_separate_files_analysis <- function(train_path = "/Users/clh/downloads/data/data_set/Workshop/train_final_variance_20.csv",
-                                           test_path = "/Users/clh/downloads/data/data_set/Workshop/test_final_variance_20.csv",
+run_rf_separate_files_analysis <- function(train_path = "C:/Users/yu/OneDrive/桌面/train_final_XBG_20.csv",
+                                           test_path = "C:/Users/yu/OneDrive/桌面/test_final_XGB_20.csv",
                                            target_col = "Label",
                                            # Random Forest 參數
                                            rf_ntree = 500,
@@ -800,8 +800,8 @@ quick_rf_separate_analysis <- function() {
   cat("5折分層交叉驗證\n\n")
   
   result <- run_rf_separate_files_analysis(
-    train_path = "train_final_variance_20.csv",
-    test_path = "test_final_variance_20.csv",
+    train_path = "C:/Users/yu/OneDrive/桌面/train_final_XBG_20.csv",
+    test_path = "C:/Users/yu/OneDrive/桌面/test_final_XGB_20.csv",
     rf_ntree = 500,
     rf_mtry = NULL,  # 自動計算
     rf_nodesize = 10,
@@ -842,8 +842,8 @@ tuned_rf_separate_analysis <- function() {
   cat("5折分層交叉驗證\n\n")
   
   result <- run_rf_separate_files_analysis(
-    train_path = "train_final_variance_20.csv",
-    test_path = "test_final_variance_20.csv",
+    train_path = "C:/Users/yu/OneDrive/桌面/train_final_XBG_20.csv",
+    test_path = "C:/Users/yu/OneDrive/桌面/test_final_XGB_20.csv",
     rf_ntree = 300,
     rf_mtry = NULL,
     rf_nodesize = 20,  # 增加最小節點樣本數
